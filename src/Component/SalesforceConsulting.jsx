@@ -11,7 +11,7 @@ function SalesforceConsulting({title, discription, services = [] ,  imgScr}) {
   
     <div className=' bg-white md:flex '>
 
-<div className='md:flex-1 font-bold text-black font-serif mr-[-120px]  pt-[150px]  '>
+<div className='md:flex-1 font-bold text-black font-serif md:mr-[-70px] md:m-[150px]  md:mt-[200px]  '>
     <img src={imgScr}  alt="Sales Consulting" className='object-cover md:animate-slideUp animate-slideUp' />
   </div>
 
@@ -26,7 +26,7 @@ function SalesforceConsulting({title, discription, services = [] ,  imgScr}) {
       </div>
       )
       )}
-     <button className="bg-red-700 md:h-16 h-12 md:w-[190px] w-[150px] rounded-full md:text-[20px] text-[15px] md:mt-[70px] mt-[50px] md:ml-[-15px] ml-[-50px]   text-white font-semibold">Learn More</button>
+     <button className="bg-red-700 md:h-16 h-12 md:w-[190px] w-[150px] rounded-full md:text-[20px] text-[15px] md:mt-[70px] mt-[50px] md:ml-[-15px] ml-[50px]   text-white font-semibold">Learn More</button>
 
 
 

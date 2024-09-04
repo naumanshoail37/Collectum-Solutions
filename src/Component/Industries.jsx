@@ -15,19 +15,19 @@ function Industries() {
   return (
 
     <div className='industries bg-white'>
-    <div className=' flex'>
+    <div className=' md:flex'>
 
-        <div className='m-[50px] ml-[250px]'>
+        <div className='md:m-[50px] m-14 md:ml-[250px]'>
 <img src={img} alt=""  />
        
-        <div className='ml-[20px] mt-[-67px] font-bold text-[18px] text-slate-800'>Industries</div>
-        <div className='mt-2 font-bold text-[50px] font-serif'>Industries we Deal with</div>
+        <div className='md:ml-[20px] ml-[40px] md:mt-[-67px] mt-[-65px] font-bold text-[18px] text-slate-800'>Industries</div>
+        <div className='mt-2 font-bold md:text-[50px] text-[35px] font-serif'>Industries we Deal with</div>
         </div>
         </div>
 
-        <div className='container flex'>
+        <div className='container md:flex md:mt-5 m-[17px]'>
 
-        <div className='container1  bg-white border h-[200px] w-[270px] text-center ml-[200px] pt-[10px] font-bold text-[25px] flex flex-col items-center justify-center '>
+        <div className='container1  bg-white border h-[200px] w-[270px] text-center md:ml-[200px] ml-[30px] md:pt-[10px] font-bold text-[25px] flex flex-col items-center justify-center '>
   <BiSolidInjection 
    size={50}
  className='hover:animate-pulse' 
@@ -56,9 +56,9 @@ function Industries() {
 </div>
 </div>
 
-<div className='container flex mt-5'>
+<div className='container md:flex md:mt-5 m-[17px]'>
 
-<div className='container1 bg-white border h-[200px] w-[270px] text-center ml-[200px] pt-[50px] font-bold text-[25px] flex flex-col items-center justify-center'>
+<div className='container1 bg-white border h-[200px] w-[270px] text-center md:ml-[200px] ml-[30px] md:pt-[50px] font-bold text-[25px] flex flex-col items-center justify-center'>
 <FaPhone  size={50} className='hover:animate-pulse' />
   <div className='text-[25px] mt-[10px] hover:bg-black hover:text-red-700'>
     Telecome

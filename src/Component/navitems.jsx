@@ -9,7 +9,7 @@ cName : "nav-items"
 {
     id : 2,
     title : "About",
-    path : "./About",
+    path : "./about",
     cName : "nav-items"
     
 },
@@ -25,13 +25,13 @@ export const AboutusDropdown =  [
 {
     id:1,
     title:"Our Clients",
-    path: "./Our Clients",
+    path: "./our-clients",
     cName:"submenu-items",
 },
 {
     id:2,
     title:"Our Process",
-    path: "./Our Process",
+     path: "./Our Process",
     cName:"submenu-items",
 },
 {

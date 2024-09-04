@@ -40,8 +40,8 @@ else {
 
     return (
         <div className='Container w-screen '>
-            <div style={bgImageStyle} className='relative '>
-                <h1 className='absolute text-6xl top-[35%] left-[55%] h-[150px] w-[450px] font-bold bg-red-700 font-serif' > {imageSlider[currentState].title} </h1>
+            <div style={bgImageStyle} className='md:relative '>
+                <h1 className='md:absolute text-6xl md:top-[35%] top-[500px] left-[55%] md:h-[150px] h-[150] w-[450px] font-bold bg-red-700 font-serif' > {imageSlider[currentState].title} </h1>
             </div>
 
             <div className=''>
