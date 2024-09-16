@@ -1,24 +1,50 @@
 import React, { useEffect, useState } from 'react';
-import imageSlider from '../data';
 import { FaLongArrowAltLeft, FaLongArrowAltRight } from "react-icons/fa";
+import slider1 from '../Component/slider1.webp';
+import slider2 from '../Component/slider2.webp';
+import slider3 from '../Component/slider3.webp';
+import slider4 from '../Component/slider4.webp';
 
+const imageSlider = [
+    {
+        id: 1,
+        title1: "Digital ",
+        title2:'Marketing',
+        subtitle: "Full Solutions",
+        url: slider1,
+    },
+    {
+        id: 2,
+        title1: "Software",
+        title2: "Development",
+        subtitle: "Custom Software",
+        url: slider2,
+    },
+    {
+        id: 3,
+        title1: "SalesForce ",
+        title2 :"Consulting",
+        subtitle: "Professional Services",
+        url: slider3,
+    },
+    {
+        id: 4,
+        title1: "SAP-BI ",
+        title2: 'Consulting',
+        subtitle: "Data Analytics",
+        url: slider4,
+    },
+];
 
 const Hero = () => {
     const [currentState, setCurrentState] = useState(0);
-    useEffect(()=>{
 
-        const timer = setTimeout(()=>{
-if(currentState ===2){
-    setCurrentState(0)
-}
-else {
-    setCurrentState(currentState +1 )
-}
-
-
-        }, 5000)
-        return () => clearTimeout(timer)
-    })
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setCurrentState((prev) => (prev === imageSlider.length - 1 ? 0 : prev + 1));
+        }, 5000);
+        return () => clearTimeout(timer);
+    }, [currentState]);
 
     const handlePrevClick = () => {
         setCurrentState((prev) => (prev === 0 ? imageSlider.length - 1 : prev - 1));
@@ -39,29 +65,24 @@ else {
     };
 
     return (
-        <div className='Container w-screen '>
-            <div style={bgImageStyle} className='md:relative '>
-                <h1 className='md:absolute text-6xl md:top-[35%] top-[500px] left-[55%] md:h-[150px] h-[150] w-[450px] font-bold bg-red-700 font-serif' > {imageSlider[currentState].title} </h1>
-            </div>
+        <div className='Container w-screen'>
+            <div style={bgImageStyle} className='md:relative'>
 
-            <div className=''>
-                {
+                <div className='md:absolute text-center md:top-[35%] top-[500px] left-[65%] transform -translate-x-1/2'>
+                    <h1 className='text-6xl font-bold font-serif bg-red-700 text-black'>
+                        {imageSlider[currentState].title1}
+                    </h1>
 
-                    imageSlider.map((imageSlider, currentState) => {
-
-                        <span key={currentState} onClick={() => goToNext(currentState)} ></span>
-                    }
-
-                    )
-
-                }
-
-
+                    <h1 className='text-6xl font-bold font-serif bg-white text-black'>
+                        {imageSlider[currentState].title2}
+                    </h1>
+                
+                </div>
             </div>
 
             <button
                 onClick={handlePrevClick}
-                className="absolute left-4 top-1/2 transform -translate-y-1/2  bg-white text-black md:px-8 px-2 md:py-8 py-2  rounded-full"
+                className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white text-black md:px-8 px-2 md:py-8 py-2 rounded-full"
                 aria-label="Previous Slide"
             >
                 <FaLongArrowAltLeft size={30} />
@@ -69,11 +90,10 @@ else {
 
             <button
                 onClick={handleNextClick}
-                className="absolute right-4 top-1/2 transform -translate-y-1/2  bg-white text-black md:px-8 px-2 md:py-8 py-2 rounded-full"
+                className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white text-black md:px-8 px-2 md:py-8 py-2 rounded-full"
                 aria-label="Next Slide"
             >
                 <FaLongArrowAltRight size={30} />
-
             </button>
         </div>
     );

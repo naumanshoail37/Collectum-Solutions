@@ -13,6 +13,7 @@ import Industries from "./Component/Industries";
 import Slider from "./Component/Slider";
 import OurOfferings from "./Component/OurOfferings";
 import About from "./Component/ABOUT";
+import OurClients from "./Component/OURCLIENTS";
 
 export default function App() {
   return (

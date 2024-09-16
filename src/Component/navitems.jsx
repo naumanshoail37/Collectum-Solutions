@@ -3,20 +3,20 @@ export const navitems = [
 {
 id : 1,
 title : "Home",
-path : "./",
+path : "/",
 cName : "nav-items"
 },
 {
     id : 2,
     title : "About",
-    path : "./about",
+    path : "/about",
     cName : "nav-items"
     
 },
 {
 id : 3,
 title : "Services",
-path : "./Services",
+path : "/Services",
 cName : "nav-items"
 },
 ]
@@ -25,31 +25,31 @@ export const AboutusDropdown =  [
 {
     id:1,
     title:"Our Clients",
-    path: "./our-clients",
+    path: "/our-clients",
     cName:"submenu-items",
 },
 {
     id:2,
     title:"Our Process",
-     path: "./Our Process",
+     path: "/Our Process",
     cName:"submenu-items",
 },
 {
     id:3,
     title:"Our Team",
-    path: "./Our Team",
+    path: "/Our Team",
     cName:"submenu-items",
 },
 {
     id:4,
     title:"Faqs",
-    path: "./Faqs",
+    path: "/Faqs",
     cName:"submenu-items",
 },
 {
     id:5,
     title:"Testominals",
-    path: "./Testominals",
+    path: "/Testominals",
     cName:"submenu-items",
 },
 ]
@@ -57,26 +57,26 @@ export const ServicesDropdown =  [
 {
     id:1,
     title:"Software developments",
-    path: "./Software developments",
+    path: "/Software Developments",
     cName:"submenu-items",
 },
 {
     
     id:2,
     title:"SalesForce Consulting",
-    path: "./SalesForce Consulting",
+    path: "/SalesForce Consulting",
     cName:"submenu-items",
 },
 {
     id:3,
     title:"SAP-BI Consulting",
-    path: "./SAP-BI Consulting",
+    path: "/SAP-BI Consulting",
     cName:"submenu-items",
 },
 {
     id:4,
     title:"Cloud Solution",
-    path: "./Cloud Solution",
+    path: "/Cloud Solution",
     cName:"submenu-items",
 },
 {

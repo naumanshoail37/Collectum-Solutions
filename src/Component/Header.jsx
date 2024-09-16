@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import img from "../Component/comp.png";
+import img from "../Component/compp.png";
 import { navitems } from './navitems';
 import AboutDropdown from './AboutDropdown.jsx';
 import ServicesDropdown from './ServicesDropdown.jsx';
@@ -14,10 +14,10 @@ function Header() {
         <header className='navbar bg-white shadow md:justify-center md:flex text-center'>
             <div>
                 <Link to="/" className='navbarlogo'>
-                    <img src={img} alt="logo" className='h-16 md:flex md:pr-[250px] pr-[50px] mt-3' />
+                    <img src={img} alt="logo" className='h-12 md:flex md:pr-[350px] pr-[50px] mt-3 mb-3' />
                 </Link>
             </div>
-            <ul className='md:z-10 nav-items text-lg font-bold md:flex justify-center md:gap-16 md:m-5 font-serif mt-9 md:pr-[460px]'>
+            <ul className='z-10 flex flex-row gap-24 mt-7 justify-center pr-[380px] font-bold'>
                 {navitems.map((item) => {
                     if (item.title === "About") {
                         return (
@@ -58,7 +58,7 @@ function Header() {
                     );
                 })}
             </ul>
-            <Button />
+            <Button className='mt-[553px]' />
         </header>
     );
 }

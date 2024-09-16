@@ -7,7 +7,7 @@ function Button (){
 
     return (
   
-        <Link to = "Contact Us"><button className="btn hover:delay-100 mt-4	 text-white bg-red-600 hover:bg-black border text-xl font-bold font-serif rounded-3xl h-14  w-48	">Contact Us</button></Link>
+        <Link to = "Contact Us"><button className="btn hover:delay-100 mt-3	 text-white bg-red-600 hover:bg-black border text-[15px] font-bold font-serif rounded-3xl h-[55px]  w-44	">Contact Us</button></Link>
 
     ); 
 }
