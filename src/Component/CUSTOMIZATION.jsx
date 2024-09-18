@@ -62,7 +62,7 @@ function Customization() {
         <h1 className='text-[35px]  font-bold font-serif mt-32  '>Extend Salesforce Functionality</h1>
         <img className='h-[370px] mt-10 w-[350px] ml-[268px] ' src={img1} alt="" />
         </div>
-        <p className='w-[800px] ml-3 relative text-[16px] bottom-[175px]'>Salesforce is powerful, but sometimes you need more. We can extend the platform’s capabilities through custom objects, fields, and workflows, perfectly aligning it with your specific sales strategy. This ensures Salesforce caters to your unique needs and helps you achieve your sales goals.</p>
+        <p className='w-[800px] ml-3 relative text-[16px] bottom-[200px]'>Salesforce is powerful, but sometimes you need more. We can extend the platform’s capabilities through custom objects, fields, and workflows, perfectly aligning it with your specific sales strategy. This ensures Salesforce caters to your unique needs and helps you achieve your sales goals.</p>
         <hr className='border mt-[-40px] border-black w-[1240px] ml-4' />
     
         <div className='ml-4 flex flex-row gap-8'>

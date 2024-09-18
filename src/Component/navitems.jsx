@@ -136,23 +136,23 @@ export const SAP_BI_Consulting = [
     {
         id: 1,
         title: "Consulting and Advisory",
-        path: "/Consulting-and-Advisory", // fixed path with proper casing
+        path: "/Consulting-and-Advisory", 
         cName: "Sub-submenu-items",
     },
     {
         id: 2,
-        title: "Implementation", // fixed typo from 'Iplementation' to 'Implementation'
+        title: "Implementation", 
         path: "/Implementation",
         cName: "Sub-submenu-items",
     },
     {
         id: 3,
-        title: "Bespoke Add-on Development", // fixed typo in title
+        title: "Bespoke Add-on Development",
         path: "/Bespoke-Add-on-Development",
         cName: "Sub-submenu-items",
     },
     {
-        id: 4, // changed id from 2 to 4 for uniqueness
+        id: 4, 
         title: "Training",
         path: "/Training",
         cName: "Sub-submenu-items",
@@ -162,31 +162,80 @@ export const CloudSolution =  [
 {
         id:1,
         title:"ERP",
-        path: "./ERP",
+        path: "/ERP",
         cName:"Sub-submenu-items",
 },
 {
     id:2,
     title:"CloudOps",
-    path: "./CloudOps",
+    path: "/CloudOps",
     cName:"Sub-submenu-items",
 },
 {
     id:3,
     title:"AWS , Azure & GCP",
-    path: "./AWS , Azure & GCP",
+    path: "/AWS , Azure & GCP",
     cName:"Sub-submenu-items",
 },
 {
     id:3,
     title:"Cloud Migration",
-    path: "./Cloud Migration",
+    path: "/Cloud Migration",
     cName:"Sub-submenu-items",
 },
 {
     id:4,
     title:"Business Process Automamtion",
-    path: "./Business Process Automamtion",
+    path: "/Business Process Automamtion",
     cName:"Sub-submenu-items",
 },
+];
+export const DigitalMarketing =  [
+    {
+            id:1,
+            title:"Digital Strategy",
+            path: "/DigitalStrategy",
+            cName:"Sub-submenu-items",
+    },
+    {
+        id:2,
+        title:"Social Media Management",
+        path: "/SocialMediaManagement",
+        cName:"Sub-submenu-items",
+    },
+    {
+        id:3,
+        title:"Branding And Creating Service",
+        path: "/BrandingAndCreatingService",
+        cName:"Sub-submenu-items",
+    },
+    {
+        id:3,
+        title:"Content Production",
+        path: "/ContentProduction",
+        cName:"Sub-submenu-items",
+    },
+    {
+        id:4,
+        title:"Google & Meta Ads",
+        path: "/GoogleAndMetaAds",
+        cName:"Sub-submenu-items",
+    },
+    {
+        id:4,
+        title:"SEO",
+        path: "/SEO",
+        cName:"Sub-submenu-items",
+    },
+];
+ const ContactUS = [
+{
+    id: 4,
+    title: "Contact Us",
+    path: "/ContactUs",
+    cName: "nav-items"
+},
 ]
+
+
+

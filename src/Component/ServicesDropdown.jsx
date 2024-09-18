@@ -2,14 +2,19 @@ import React, { useState } from 'react';
 import { ServicesDropdown as servicesDropdownItems } from './navitems.jsx';
 import SoftwareDevelopmentDropdown from './SoftwareDevelopmentDropdown.jsx';
 import SalesForceDropdown from './SalesForceDropdown.jsx';
-import SAP_Bi_ConsultingDropdown from './SAP_Bi_ConsultingDropdown.jsx';  // Ensure correct import
+import SAP_Bi_ConsultingDropdown from './SAP_Bi_ConsultingDropdown.jsx'; 
+import CloudDropDown from './CloudDropDown.jsx';
 import { Link } from 'react-router-dom';
+import DigitalMarketingDropDown from './DIGITALMARKETINGDropDown.jsx';
+
 
 function ServicesDropdown() {
     const [dropdownVisible, setDropdownVisible] = useState(false);
     const [softwareDevelopmentVisible, setSoftwareDevelopmentVisible] = useState(false);
     const [salesForceVisible, setSalesForceVisible] = useState(false);
     const [SAPBIVisible, setSAPBIVisible] = useState(false);
+    const [CloudVisible, setCloudVisible] = useState(false);
+    const [DigitalVisible, setDigitalVisible] = useState(false);
 
     const handleMouseEnter = () => {
         setDropdownVisible(true);
@@ -20,6 +25,8 @@ function ServicesDropdown() {
         setSoftwareDevelopmentVisible(false);
         setSalesForceVisible(false);
         setSAPBIVisible(false);
+        setCloudVisible(false)
+        setDigitalVisible(false)
     };
 
     return (
@@ -44,6 +51,12 @@ function ServicesDropdown() {
                                 if (item.title === "SAP-BI Consulting") {
                                     setSAPBIVisible(true);
                                 }
+                                if (item.title === "Cloud Solution") {
+                                    setCloudVisible(true);
+                                }
+                                if (item.title === "Digital Marketing") {
+                                    setDigitalVisible(true);
+                                }
                             }}
                             onMouseLeave={() => {
                                 if (item.title === "Software developments") {
@@ -54,6 +67,12 @@ function ServicesDropdown() {
                                 }
                                 if (item.title === "SAP-BI Consulting") {
                                     setSAPBIVisible(false);
+                                }
+                                if (item.title === "Cloud Solution") {
+                                    setCloudVisible(false);
+                                }
+                                if (item.title === "Digital Marketing") {
+                                    setDigitalVisible(false);
                                 }
                             }}
                         >
@@ -75,7 +94,18 @@ function ServicesDropdown() {
                                     <SAP_Bi_ConsultingDropdown /> 
                                 </div>
                             )}
+                            {item.title === "Cloud Solution" && CloudVisible && (
+                                <div className='absolute left-full top-0 ml-2'>
+                                    <CloudDropDown /> 
+                                </div>
+                            )}
+                            {item.title === "Digital Marketing" && DigitalVisible && (
+                                <div className='absolute left-full top-0 ml-2'>
+                                    <DigitalMarketingDropDown/> 
+                                </div>
+                            )}
                         </li>
+                        
                     ))}
                 </ul>
             </div>

@@ -23,6 +23,22 @@ import CMS from "./Component/CMS.jsx";
 import ConsultingAndAdvisor from "./Component/CONSULTINGANDADVISOR.jsx";
 import IndustrySpecific from "./Component/INDUSTRYSPECIFIC.jsx";
 import Customization from "./Component/CUSTOMIZATION.jsx";
+import ConsultingAndAdvisory from "./Component/CONSULTINGANDADVISORY.jsx";
+import Implementation from "./Component/IMPLEMENTATION.jsx";
+import Bespoke from "./Component/BESPOKE.jsx";
+import Training from "./Component/TRAINING.jsx";
+import { MdExposurePlus2 } from "react-icons/md";
+import ERP from "./Component/ERP.jsx";
+import CloudOps from "./Component/CLOUDOPS.jsx";
+import AWS from "./Component/AWS.jsx";
+import CloudMigration from "./Component/CLOUDMIGRATION.jsx";
+import BusinessAutomation from "./Component/BUSINESSAUTOMATION.jsx";
+import DigitalStrategy from "./Component/DIGITALSTRATEGY.jsx";
+import SocialMedia from "./Component/SOCIALMEDIA.jsx";
+import BrandingAndCreative from "./Component/BRANDINGANDCREATIVE.jsx";
+import ContentProduction from "./Component/CONTENTPRODUCTION.jsx";
+import GoogleAndMeta from "./Component/GOOGLE&META.jsx";
+import SEO from "./Component/SEO.jsx";
 
 
 
@@ -127,7 +143,85 @@ const router = createBrowserRouter([
     element: <Customization/>,
     
   },
+  {
+    path: "/Consulting-and-Advisory",
+    element: <ConsultingAndAdvisory/>,
+    
+  },
+  {
+    path:"/Implementation",
+    element: <Implementation/>,
+    
+  },
 
+  {
+    path:"/Bespoke-Add-on-Development",
+    element: <Bespoke/>,
+    
+  },
+  {
+    path:"/Training",
+    element: <Training/>,
+    
+  },
+  {
+    path:"/ERP",
+    element: <ERP/>,
+    
+  },
+  {
+    path: "/CloudOps",
+    element: <CloudOps/>,
+    
+  },
+  {
+    path: "/AWS , Azure & GCP",
+    element: <AWS/>,
+    
+  },
+  {
+    path: "/Cloud Migration",
+    element: <CloudMigration/>,
+    
+  },
+  {
+    path: "/Business Process Automamtion",
+    element: <BusinessAutomation/>,
+    
+  },
+  {
+    path: "/DigitalStrategy",
+    element: <DigitalStrategy/>,
+    
+  },
+  {
+    path: "/SocialMediaManagement",
+    element: <SocialMedia/>,
+    
+  },
+  {
+    path: "/BrandingAndCreatingService",
+    element: <BrandingAndCreative/>,
+    
+  },
+  {
+    path: "/ContentProduction",
+    element: <ContentProduction/>,
+    
+  },
+
+  {
+    path: "/GoogleAndMetaAds",
+    element: <GoogleAndMeta/>,
+    
+  },
+  {
+    path: "/SEO",
+    element: <SEO/>,
+    
+  },
+  
+  
 ]);
 
 createRoot(document.getElementById("root")).render(
