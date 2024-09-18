@@ -82,7 +82,7 @@ export const ServicesDropdown =  [
 {
     id:4,
     title:"Digital Marketing",
-    path: "./Digital Marketing",
+    path: "/Digital Marketing",
     cName:"submenu-items",
 },
 ]
@@ -90,25 +90,25 @@ export const SoftwareDevelopmentDropdown = [
 {
     id:1,
     title:"Web Development",
-    path: "./Web Development",
+    path: "/WebDevelopment",
     cName:"Sub-submenu-items",
 },
 {
     id:2,
     title:"Mobile App Development",
-    path: "./Mobile App Development",
+    path: "/MobileApp",
     cName:"Sub-submenu-items",
 },
 {
     id:3,
     title:"CRM",
-    path: "./CRM",
+    path: "/CRM",
     cName:"Sub-submenu-items",
 },
 {
     id:2,
     title:"CMS",
-    path: "./CMS",
+    path: "/CMS",
     cName:"Sub-submenu-items",
 },
 ]
@@ -116,48 +116,48 @@ export const SalesForceConsulting = [
 {
     id:1,
     title:"Consulting And Advisor",
-    path: "./Consulting And Advisor",
+    path: "/Consulting And Advisor",
     cName:"Sub-submenu-items",
 },
 {
     id:2,
     title:"Industry Specific Solution",
-    path: "./Industry Specific Solution",
+    path: "/Industry Specific Solution",
     cName:"Sub-submenu-items",
 },
 {
     id:3,
     title:"Customization And Development",
-    path: "./Customization And Development",
+    path: "/Customization And Development",
     cName:"Sub-submenu-items",
 },
 ]
-export const SAB_BI_Consilting =[
-{
-    id:1,
-    title:"Consulting and Advisory",
-    path: "./Consulting and Advisory",
-    cName:"Sub-submenu-items",
-},
-{
-    id:2,
-    title:"Iplementation",
-    path: "./Iplementation",
-    cName:"Sub-submenu-items",
-},
-{
-    id:2,
-    title:"Be Spoke Add-on Development",
-    path: "./Be Spoke Add-on Development",
-    cName:"Sub-submenu-items",
-},
-{
-    id:3,
-    title:"Training",
-    path: "./Training",
-    cName:"Sub-submenu-items",
-},
-] 
+export const SAP_BI_Consulting = [
+    {
+        id: 1,
+        title: "Consulting and Advisory",
+        path: "/Consulting-and-Advisory", // fixed path with proper casing
+        cName: "Sub-submenu-items",
+    },
+    {
+        id: 2,
+        title: "Implementation", // fixed typo from 'Iplementation' to 'Implementation'
+        path: "/Implementation",
+        cName: "Sub-submenu-items",
+    },
+    {
+        id: 3,
+        title: "Bespoke Add-on Development", // fixed typo in title
+        path: "/Bespoke-Add-on-Development",
+        cName: "Sub-submenu-items",
+    },
+    {
+        id: 4, // changed id from 2 to 4 for uniqueness
+        title: "Training",
+        path: "/Training",
+        cName: "Sub-submenu-items",
+    },
+];
 export const CloudSolution =  [
 {
         id:1,

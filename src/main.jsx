@@ -15,6 +15,15 @@ import SoftwareDevelopments from "./Component/SOFTWARE DEVELOPMENTS.jsx";
 import SalesForce from "./Component/SALESFORCE.jsx";
 import SAP_BI_consulting from "./Component/SAP-BI-CONSULTING.jsx";
 import CloudSolution from "./Component/CLOUDSOLUTION.jsx";
+import DigitalMarketing from "./Component/DIGITALMARKETING.jsx";
+import WebDevelopment from "./Component/WEBDEVELOPMENT.jsx";
+import MobileApp from "./Component/MOBILEAPP.jsx";
+import CRM from "./Component/CRM.jsx";
+import CMS from "./Component/CMS.jsx";
+import ConsultingAndAdvisor from "./Component/CONSULTINGANDADVISOR.jsx";
+import IndustrySpecific from "./Component/INDUSTRYSPECIFIC.jsx";
+import Customization from "./Component/CUSTOMIZATION.jsx";
+
 
 
 const router = createBrowserRouter([
@@ -78,6 +87,47 @@ const router = createBrowserRouter([
     element: <CloudSolution />,
     
   },
+  {
+    path: "/Digital Marketing",
+    element: <DigitalMarketing />,
+    
+  },
+  {
+    path: "/WebDevelopment",
+    element: <WebDevelopment />,
+    
+  },
+  {
+    path: "/MobileApp",
+    element: <MobileApp />,
+    
+  },
+  {
+    path: "/CRM",
+    element: <CRM />,
+    
+  },
+  {
+    path: "/CMS",
+    element: <CMS/>,
+    
+  },
+  {
+    path: "/Consulting And Advisor",
+    element: <ConsultingAndAdvisor/>,
+    
+  },
+  {
+    path: "/Industry Specific Solution",
+    element: <IndustrySpecific/>,
+    
+  },
+  {
+    path: "/Customization And Development",
+    element: <Customization/>,
+    
+  },
+
 ]);
 
 createRoot(document.getElementById("root")).render(

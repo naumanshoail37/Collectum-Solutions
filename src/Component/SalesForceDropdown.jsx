@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 function SalesForceDropdown() {
     return (
-        <div className='absolute left-full top-0 ml-2 list-none text-start bg-white border w-[250px] text-lg pt-10 font-mono p-8 font-bold'>
+        <div className=' absolute  ml-[-7px] border-b-0 border-t-0 list-none text-start border-l-0 bg-white border w-[200px] text-[14px] pt-10 font-serif p-10 font-bold'>
             <ul className='submenu-items'>
                 {SalesForceConsulting.map(item => (
                     <li key={item.id} className='mb-4'>

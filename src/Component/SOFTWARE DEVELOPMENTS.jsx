@@ -209,7 +209,7 @@ Collectum Solutions offers a wide range of software development services. We can
 
 </p>
  )}
- </div>What are the benefits of custom software development?
+ </div>
 
  {/* question 6*/}
 

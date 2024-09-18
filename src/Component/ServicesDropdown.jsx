@@ -1,13 +1,15 @@
 import React, { useState } from 'react';
-import { ServicesDropdown as servicesDropdownItems } from './navitems.jsX';
+import { ServicesDropdown as servicesDropdownItems } from './navitems.jsx';
 import SoftwareDevelopmentDropdown from './SoftwareDevelopmentDropdown.jsx';
-import { Link } from 'react-router-dom';
 import SalesForceDropdown from './SalesForceDropdown.jsx';
+import SAP_Bi_ConsultingDropdown from './SAP_Bi_ConsultingDropdown.jsx';  // Ensure correct import
+import { Link } from 'react-router-dom';
 
 function ServicesDropdown() {
     const [dropdownVisible, setDropdownVisible] = useState(false);
     const [softwareDevelopmentVisible, setSoftwareDevelopmentVisible] = useState(false);
     const [salesForceVisible, setSalesForceVisible] = useState(false);
+    const [SAPBIVisible, setSAPBIVisible] = useState(false);
 
     const handleMouseEnter = () => {
         setDropdownVisible(true);
@@ -16,7 +18,8 @@ function ServicesDropdown() {
     const handleMouseLeave = () => {
         setDropdownVisible(false);
         setSoftwareDevelopmentVisible(false);
-        setSalesForceVisible(false)
+        setSalesForceVisible(false);
+        setSAPBIVisible(false);
     };
 
     return (
@@ -25,18 +28,21 @@ function ServicesDropdown() {
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
         >
-            <div className='absolute list-none text-start bg-white border w-[250px] m-[20px] text-lg pt-10 font-mono p-8 font-bold'>
+            <div className='absolute list-none text-start bg-white border w-[200px] m-[20px] text-[15px] pt-10 font-serif p-8 font-bold'>
                 <ul className={dropdownVisible ? "submenu-items clicked" : "submenu-items"}>
-                {servicesDropdownItems.map(item => (
+                    {servicesDropdownItems.map(item => (
                         <li
                             key={item.id}
-                            className='mb-4 mr-4 hover:text-red-400 font-bold relative'
+                            className='mb-4 mr-4 hover:text-red-700 font-bold relative'
                             onMouseEnter={() => {
                                 if (item.title === "Software developments") {
                                     setSoftwareDevelopmentVisible(true);
                                 }
                                 if (item.title === "SalesForce Consulting") {
                                     setSalesForceVisible(true);
+                                }
+                                if (item.title === "SAP-BI Consulting") {
+                                    setSAPBIVisible(true);
                                 }
                             }}
                             onMouseLeave={() => {
@@ -45,6 +51,9 @@ function ServicesDropdown() {
                                 }
                                 if (item.title === "SalesForce Consulting") {
                                     setSalesForceVisible(false);
+                                }
+                                if (item.title === "SAP-BI Consulting") {
+                                    setSAPBIVisible(false);
                                 }
                             }}
                         >
@@ -59,6 +68,11 @@ function ServicesDropdown() {
                             {item.title === "SalesForce Consulting" && salesForceVisible && (
                                 <div className='absolute left-full top-0 ml-2'>
                                     <SalesForceDropdown />
+                                </div>
+                            )}
+                            {item.title === "SAP-BI Consulting" && SAPBIVisible && (
+                                <div className='absolute left-full top-0 ml-2'>
+                                    <SAP_Bi_ConsultingDropdown /> 
                                 </div>
                             )}
                         </li>

@@ -74,7 +74,7 @@ In today's visually driven world, first impressions matter more than ever. Power
                 <p className='mt-5 font-bold'>Bespoke Solutions for Salesforce Success</p>
                 <p className='mt-5 '>Our comprehensive consulting services encompass three core areas:</p>
 
-                <div className='mt-10  flex flex-col border-[1px] border-red-600 h-[330px] w-[930px]'>
+                <div className='mt-10  flex flex-col border-[1px] border-red-600 h-[360px] w-[930px]'>
 
 
                     <div className='flex flex-row gap-[180px]' >
