@@ -8,7 +8,7 @@ function OurOfferings() {
     <div className='mobilepage md:flex bg-white'>
 
         <div className='text-[18px] font-bold text-red-600 md:m-[200px] m-[50px]'>Discover Our Offerings
-        <div className='md:w-[550px] w-[350px] md:text-[60px] text-[40px] text-black'>Empower Your Business & Sales</div>
+        <div className='md:w-[550px] w-[300px] md:text-[60px] text-[40px] text-black'>Empower Your Business & Sales</div>
         <div className='text-[15px] md:w-[400px] w-[250px] text-black'>We are Collectum Solutions, your data-driven digital growth engine. We empower businesses to thrive online with a powerful combination of services.</div>
         <div className='  md:m-5 hover:animate-spin h-[150px] w-[150px]'><img src={img} alt="" />  </div>
 

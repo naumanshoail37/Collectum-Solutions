@@ -25,10 +25,10 @@ const Slider = () => {
   };
 
   return (
-    <div className="md:relative w-full h-[400px] bg-black text-white md:flex flex-col items-center justify-center overflow-hidden p-4">
+    <div className="md:relative w-full md:h-[400px] h-[300px] bg-black text-white md:flex flex-col items-center justify-center overflow-hidden p-4 ">
       <div className="md:flex flex-col items-center text-center">
        
-        <p className="md:text-[24px] text-[17px] font-serif md:w-[1000px] mb-4">{slides[currentSlide].description}</p>
+        <p className="md:text-[24px] text-[15px] font-serif md:w-[1000px] mb-4">{slides[currentSlide].description}</p>
         <div className='md:flex'>
         <div className=' absolute md:mt-0 mt-[15px] md:ml-[-60px] ml-[30px] container md:h-[50px] h-[40px] md:w-[50px] w-[40px]   bg-red-600'><div className='md:m-3 m-[8px] text-black'><RiDoubleQuotesL size={25} /></div></div>
         <h2 className="text-[20px] font-bold mb-2 md:mt-[-5px] m-2">{slides[currentSlide].name}</h2>
@@ -36,7 +36,7 @@ const Slider = () => {
         <div className=" text-[13px] text-red-600 md:mt-[-5px] md:pl-[-30px]"> {slides[currentSlide].rank}</div>
 
       </div>
-      <div className="md:absolute bottom-4 flex space-x-2">
+      <div className="absolute bottom-4 flex space-x-2">
         {slides.map((_, index) => (
           <div
             key={index}

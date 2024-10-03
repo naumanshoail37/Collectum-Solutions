@@ -228,14 +228,8 @@ export const DigitalMarketing =  [
         cName:"Sub-submenu-items",
     },
 ];
- const ContactUS = [
-{
-    id: 4,
-    title: "Contact Us",
-    path: "/ContactUs",
-    cName: "nav-items"
-},
-]
+
+
 
 
 

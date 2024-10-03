@@ -39,6 +39,7 @@ import BrandingAndCreative from "./Component/BRANDINGANDCREATIVE.jsx";
 import ContentProduction from "./Component/CONTENTPRODUCTION.jsx";
 import GoogleAndMeta from "./Component/GOOGLE&META.jsx";
 import SEO from "./Component/SEO.jsx";
+import ContactUs from "./Component/CONTACTUS.jsx";
 
 
 
@@ -219,6 +220,10 @@ const router = createBrowserRouter([
     path: "/SEO",
     element: <SEO/>,
     
+  },
+  {
+    path: "/contact",
+    element: <ContactUs />,
   },
   
   

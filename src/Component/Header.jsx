@@ -14,10 +14,10 @@ function Header() {
         <header className='navbar bg-white shadow md:justify-center md:flex text-center'>
             <div>
                 <Link to="/" className='navbarlogo'>
-                    <img src={img} alt="logo" className='h-12 md:flex md:pr-[350px] pr-[50px] mt-3 mb-3' />
+                    <img src={img} alt="logo" className='md:h-12 md:flex md:pr-[350px] pr-[200px] mt-3 mb-3' />
                 </Link>
             </div>
-            <ul className='z-10 flex flex-row gap-24 mt-7 justify-center pr-[380px] font-bold'>
+            <ul className='z-10 flex flex-row md:gap-24 gap-4 md:mt-7 mt-2 justify-center md:pr-[380px] pr-[5px] font-bold'>
                 {navitems.map((item) => {
                     if (item.title === "About") {
                         return (
@@ -27,7 +27,7 @@ function Header() {
                                 onMouseEnter={() => setAboutDropdownVisible(true)}
                                 onMouseLeave={() => setAboutDropdownVisible(false)}
                             >
-                                <Link to={item.path} className="py-6">
+                                <Link to={item.path} className="md:py-6">
                                     {item.title}
                                 </Link>
                                 {aboutDropdownVisible && <AboutDropdown />}
@@ -43,7 +43,7 @@ function Header() {
                                 onMouseEnter={() => setServicesDropdownVisible(true)}
                                 onMouseLeave={() => setServicesDropdownVisible(false)}
                             >
-                                <Link to={item.path} className="py-6">
+                                <Link to={item.path} className="md:py-6">
                                     {item.title}
                                 </Link>
                                 {servicesDropdownVisible && <ServicesDropdown />}
@@ -58,7 +58,9 @@ function Header() {
                     );
                 })}
             </ul>
-            <Button className='mt-[553px]' />
+            
+                <Button>Contact Us</Button>
+        
         </header>
     );
 }

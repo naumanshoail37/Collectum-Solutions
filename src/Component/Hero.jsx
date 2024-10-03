@@ -65,15 +65,15 @@ const Hero = () => {
     };
 
     return (
-        <div className='Container w-screen'>
-            <div style={bgImageStyle} className='md:relative'>
+        <div className='md:Container w-screen'>
+            <div style={bgImageStyle} className='relative'>
 
-                <div className='md:absolute text-center md:top-[35%] top-[500px] left-[65%] transform -translate-x-1/2'>
-                    <h1 className='text-6xl font-bold font-serif bg-red-700 text-black'>
+                <div className='absolute text-center top-[35%] left-[65%] transform -translate-x-1/2'>
+                    <h1 className='md:text-6xl text-[40px] font-bold font-serif bg-red-700 text-black'>
                         {imageSlider[currentState].title1}
                     </h1>
 
-                    <h1 className='text-6xl font-bold font-serif bg-white text-black'>
+                    <h1 className='md:text-6xl text-[40px] font-bold font-serif bg-white text-black'>
                         {imageSlider[currentState].title2}
                     </h1>
                 

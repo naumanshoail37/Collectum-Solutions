@@ -9,7 +9,7 @@ function SalesforceConsulting({title, discription, services = [] ,  imgScr}) {
 
     return (
   
-    <div className=' bg-white h-[550px] md:flex m-[10px] ml-[300px] gap-4'>
+    <div className=' bg-white md:h-[550px] md:flex m-[10px] md:ml-[300px] gap-4'>
 
 <div className='md:flex-row  '>
     <img src={imgScr}  alt="Sales Consulting" className='object-cover h-[450px] md:animate-slideUp animate-slideUp' />
